@@ -287,7 +287,7 @@ var RequestHandler = function () {
                             status: 102,
                             type: _constants.ERROR_CODES[102].id,
                             message: _constants.ERROR_CODES[102].message,
-                            orgStatusMessage: body.msg || 'unknown'
+                            orgStatusMessage: body && body.msg || 'unknown'
                         }));
                     }
 
